@@ -27,13 +27,7 @@
     let arg2 = 34;
 
     function collectionFunction(arr, string, number2) {
-        const result = [];
-         arr.filter(value => {
-            if (value.name === string || value.age === number2) {
-                result.push(value)
-            }
-        });
-         return result
+         return arr.filter(value => value.name === string || value.age === number2)
     }
 
     let t = collectionFunction(collectionArray, arg1, arg2);
