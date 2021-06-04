@@ -1,0 +1,42 @@
+<!--/*ВОСЬМАЯ ЗАДАЧА*/-->
+<!--// Вывод всех объектов, где совпадает сразу несколько полей  значений из массива объектов-->
+<!--// В функцию передаем коллекцию и 2 значения. По результату выполнения вывести все-->
+<!--// объекты массива, у которых одно свойство ('name' )равно первому параметру или другое свойство ('age') равно второму параметру.-->
+
+<script>
+    let collectionArray = [
+        {
+            name: 'test',
+            age: 24
+        },
+        {
+            name: 'twist',
+            age: 30
+        },
+        {
+            name: 'twiste',
+            age: 34
+        },
+        {
+            name: 'rest',
+            age: 24
+        }
+    ];
+
+    let arg1 = 'twist';
+    let arg2 = 34;
+
+    function collectionFunction(arr, string, number2) {
+        const result = [];
+         arr.map(value => {
+            if (value.name === string || value.age === number2) {
+                result.push(value)
+            }
+        });
+         return result
+    };
+
+    let t = collectionFunction(collectionArray, arg1, arg2);
+    console.log(t)
+</script>
+<!--/*ВОСЬМАЯ ЗАДАЧА*/-->

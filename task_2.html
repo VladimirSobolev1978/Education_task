@@ -1,0 +1,27 @@
+<!--/*ВТОРАЯ ЗАДАЧА*/-->
+<!--// Вывод всех элементов соответствующих значению/условию в массиве-->
+<!--// В функцию передаем массив и значение. По результату выполнения вывести все элементы массива, которые равны второму параметру.-->
+
+<script>
+    let array = [1, 2, 4, 6, 4, 4, 7, 9];
+    let num = 4;
+
+    // function outputElements (arr, elem) {
+    //     let array = [];
+    //     arr.map(function (number, index) {
+    //         if (number === elem) {
+    //             array.push(number);
+    //         }
+    //     })
+    //     return array;
+    // }
+
+    function outputElements (arr, elem) {
+       return array.filter(number => number === elem)
+    }
+
+    const t = outputElements(array, num);
+    console.log(t)
+</script>
+
+<!--/*ВТОРАЯ ЗАДАЧА*/-->

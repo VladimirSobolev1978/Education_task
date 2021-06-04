@@ -1,0 +1,44 @@
+<!--Вернуть true, если хотя бы 1 элемент соответсвует условию-->
+<!--В функцию передаем коллекцию и 2 значения. По результату выполнения вывести true, если хотя бы у одного
+одно свойство равно второму параметру, а другое свойство равно третьему параметру.-->
+
+<!--/* ЗАДАЧА 11 */-->
+<script>
+    let arrAll = [
+        {
+            name: 'Sasha',
+            age: 30
+        },
+        {
+            name: 'Vit',
+            age: 40
+        },
+        {
+            name: 'Lena',
+            age: 23
+        },
+        {
+            name: 'Masha',
+            age: 33
+        }
+    ];
+    
+    let arg1 = 'Masha';
+    let arg2 = 23;
+    
+    function oneMatch(arr, string, number) {
+        let result = false;
+
+        arr.map(value => {
+            if (value.name === string || value.age === number) {
+                result = true;
+                return result;
+            }
+        });
+        return result;
+    }
+
+    let t = oneMatch(arrAll, arg1, arg2);
+    console.log(t)
+</script>
+<!--/* ЗАДАЧА 11 */-->

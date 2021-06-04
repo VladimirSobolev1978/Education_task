@@ -1,0 +1,20 @@
+<!--Найти максимальный/минимальный элемент в массиве-->
+
+<!--/* ЗАДАЧА 14 */-->
+<script>
+    let array = [1, 2, 3, 4, 5, -1]
+
+    function minFunction(arr) {
+        let max = -1;
+        arr.map(value => {
+            if (value > max) {
+                max = value;
+            }
+        });
+        return max;
+    }
+
+    let t = minFunction(array);
+    console.log(t)
+</script>
+<!--/* ЗАДАЧА 14 */-->

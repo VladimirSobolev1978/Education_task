@@ -1,0 +1,48 @@
+<!--/* ЗАДАЧА 10 */-->
+<!--Вернуть true, если все элементы соответствуют условию-->
+<!--В функцию передаем коллекцию и 2 значения. По результату выполнения вывести true, если у всех объектов
+    одно свойство равно второму параметру, а другое свойство равно третьему параметру.
+ -->
+
+<script>
+    let collectionArray = [
+        {
+            name: 'test',
+            age: 24
+        },
+        {
+            name: 'twist',
+            age: 30
+        },
+        {
+            name: 'twiste',
+            age: 34
+        },
+        {
+            name: 'rest',
+            age: 24
+        }
+    ];
+
+    let arg1 = 'twist';
+    let arg2 = 30;
+
+    function collectionFunction(arr, string, number) {
+        let result = false;
+
+        arr.map(value => {
+            if(value.name === string && value.age === number) {
+                result = true;
+            } else {
+                result = false;
+                return result;
+            }
+        });
+
+        return result;
+    }
+
+    let t = collectionFunction(collectionArray, arg1, arg2);
+    console.log(t)
+</script>
+<!--/* ЗАДАЧА 10 */-->

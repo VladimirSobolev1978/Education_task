@@ -1,0 +1,32 @@
+<!--/*ПЯТАЯ ЗАДАЧА*/-->
+<!--// Найти номер последнего элемента в массиве, который соответсвует значению-->
+<!--// В функцию передаем массив и значение. По результату выполнения вывести номер последнего элемента массива, который равен второму параметру.-->
+<!--//     Пример:-->
+<!--// на вход функции ([4, 2, 7, 4, 2, 8], 2)-->
+<!--// результат: 4-->
+
+<script>
+    let block = [4, 2, 7, 4, 2, 8];
+    let elem = 2;
+
+    // function lastNumber(arr, tally) {
+    //    let number = -1;
+    //   arr.map((element, index) => {
+    //      if(element === tally) {
+    //         number = index;
+    //      }
+    //   });
+    //  return number;
+    // }
+
+
+    function lastNumber(arr, tally) {
+        let number = -1;
+        arr.map((element, index) => (element === tally) && (number = index));
+        return number;
+    }
+
+    const t = lastNumber(block, elem);
+     console.log(t)
+</script>
+<!--/*ПЯТАЯ ЗАДАЧА*/-->

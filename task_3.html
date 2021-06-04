@@ -1,0 +1,27 @@
+<!--/*ТРЕТЬЯ ЗАДАЧА*/-->
+<!--// Вывести количество элементов соответствующих условию-->
+<!--// В функцию передаем массив и значение. По результату выполнения вывести все элементы массива, которые больше второго параметра.-->
+
+<script>
+    let array = [1, 2, 3, 4, 5, 6];
+    let number = 3;
+
+    function moreElements(arrs, num) {
+       let arr = [];
+       arrs.map(function (number, index) {
+          if (number > num) {
+             arr.push(number);
+          }
+       })
+       return arr;
+    }
+
+    // function moreElements(arr, num) {
+    //    return array.filter(num => num > number)
+    // }
+
+    const t = moreElements(array, number);
+     console.log(t)
+
+</script>
+<!--/*ТРЕТЬЯ ЗАДАЧА*/-->

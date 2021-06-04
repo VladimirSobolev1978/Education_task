@@ -1,0 +1,26 @@
+<!--/*ЧЕТВЕРТАЯ ЗАДАЧА*/-->
+<!--// Вывести номер элемента в массиве-->
+<!--// В функцию передаем массив и значение. По результату выполнения вывести все номер элементов массива, которые меньше второго параметра.-->
+
+<script>
+    let block = [1, 3, 5, 7, 9, 99];
+    let tally = 6;
+
+    // function minElement(arr, num) {
+    //    let array = [];
+    //    arr.map(function (number, index) {
+    //       if (number < tally) {
+    //          array.push(number)
+    //       }
+    //    })
+    //    return array;
+    // }
+
+    function minElement(arr, num) {
+       return block.filter(num => num < tally)
+    }
+
+    const t = minElement(block, tally);
+     console.log(t)
+</script>
+<!--/*ЧЕТВЕРТАЯ ЗАДАЧА*/-->

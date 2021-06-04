@@ -1,0 +1,39 @@
+<!--Вернуть массив значений соответствующих ключу из массива объектов-->
+<!--В функцию передаем коллекцию и название ключа.
+По результату выполнения вывести массив значений по этому ключу всех объектов.-->
+
+<!--/* ЗАДАЧА 13 */-->
+<script>
+    let collectionArray = [
+        {
+            name: 'test',
+            age: 24
+        },
+        {
+            name: 'twist',
+            age: 30
+        },
+        {
+            name: 'twiste',
+            age: 34
+        },
+        {
+            name: 'rest',
+            age: 24
+        }
+    ];
+    let name = 'name';
+    
+    function keyFunction(arr, string) {
+        let array = [];
+        arr.map(item => {
+            array.push(item[string]);
+        });
+        return array;
+    }
+
+
+    let t = keyFunction(collectionArray, name);
+    console.log(t)
+</script>
+<!--/* ЗАДАЧА 13 */-->

@@ -1,0 +1,26 @@
+<!--/*СЕДЬМАЯ ЗАДАЧА*/-->
+<!--// Вывод всех элементов, где совпадает сразу несколько значений из массива-->
+<!--// В функцию передаем массив и 2 значения. По результату выполнения-->
+<!--// вывести все элементы массива, которые равны или второму, или третьему параметру.-->
+
+<script>
+    let array = [1, 2, 3, 4, 5, 6, 7, 7, 7, 4, 4, 8];
+    let arg1 = 4;
+    let arg2 = 7;
+
+    function allElement (arr, number1, number2) {
+       return arr.filter(function (value) {
+            if (value === number1 || value === number2) {
+                return value;
+            }
+        })
+    }
+
+    function allElement(arr, number1, number2) {
+        return arr.filter(value => value === number1 || value === number2);
+     };
+
+    const t = allElement(array, arg1, arg2);
+     console.log(t);
+</script>
+<!--/*СЕДЬМАЯ ЗАДАЧА*/-->
