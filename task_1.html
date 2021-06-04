@@ -3,31 +3,10 @@
 <script>
     const array = [4, 6, 2, 7, 8, 4];
 
-    // lengthFunction = (arr) => {
-    //     let count = 0;
-    //
-    //     array.map((value, index) => {
-    //         // count = ++index;
-    //         count++;
-    //     });
-    //     return count;
-    // }
-
-    // function lengthFunction() {
-    //     let count = 0;
-    //
-    //     array.map((value, index) => {
-    //         // count = ++index;
-    //         count++;
-    //     });
-    //     return count;
-    // }
-
     const lengthFunction = function () {
         let count = 0;
 
-        array.map((value, index) => {
-            // count = ++index;
+        array.forEach((value, index) => {
             count++;
         });
         return count;
