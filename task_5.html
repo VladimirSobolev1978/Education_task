@@ -10,12 +10,15 @@
     let elem = 2;
 
     function lastNumber(arr, tally) {
-        let number = -1;
-        arr.forEach((element, index) => (element === tally) && (number = index));
-        return number;
+        return arr.reduce((number, element, index) => {
+            if (element === tally) {
+              return index;
+            }
+            return number;
+        }, -1);
     }
 
     const t = lastNumber(block, elem);
-     console.log(t)
+    console.log(t)
 </script>
 <!--/*ПЯТАЯ ЗАДАЧА*/-->
