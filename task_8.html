@@ -14,7 +14,7 @@
             age: 30
         },
         {
-            name: 'twiste',
+            name: 'twister',
             age: 34
         },
         {
@@ -28,13 +28,13 @@
 
     function collectionFunction(arr, string, number2) {
         const result = [];
-         arr.map(value => {
+         arr.filter(value => {
             if (value.name === string || value.age === number2) {
                 result.push(value)
             }
         });
          return result
-    };
+    }
 
     let t = collectionFunction(collectionArray, arg1, arg2);
     console.log(t)
