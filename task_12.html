@@ -10,10 +10,9 @@
     function resultFunc(arr, number) {
         let result = false;
 
-        arr.map(value => {
+        arr.forEach(value => {
             if (value === number) {
                 result = true;
-                return result;
             }
         })
         return result;
