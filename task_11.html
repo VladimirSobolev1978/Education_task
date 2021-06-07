@@ -29,7 +29,7 @@
     function oneMatch(arr, string, number) {
         let result = false;
 
-        arr.map(value => {
+        arr.forEach(value => {
             if (value.name === string || value.age === number) {
                 result = true;
                 return result;
