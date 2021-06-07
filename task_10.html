@@ -15,7 +15,7 @@
             age: 30
         },
         {
-            name: 'twiste',
+            name: 'twister',
             age: 34
         },
         {
@@ -28,18 +28,30 @@
     let arg2 = 30;
 
     function collectionFunction(arr, string, number) {
+
         let result = false;
 
-        arr.map(value => {
-            if(value.name === string && value.age === number) {
+        arr.forEach(value => {
+            if (value.name === string && value.age === number) {
                 result = true;
-            } else {
-                result = false;
                 return result;
             }
         });
-
         return result;
+
+
+        // let result = false;
+        //
+        // arr.forEach(value => {
+        //     if(value.name === string && value.age === number) {
+        //         result = true;
+        //     } else {
+        //         result = false;
+        //         return result;
+        //     }
+        // });
+        //
+        // return result;
     }
 
     let t = collectionFunction(collectionArray, arg1, arg2);
