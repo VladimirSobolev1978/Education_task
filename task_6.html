@@ -24,15 +24,13 @@
        }
     ];
 
-    testFunction = (arr, val) => {
-      collectionArr.map(item => {
-         if (item.age > val) {
-            return item
-         }
-      })
-    }
+    let name = 'test';
 
-    const t = testFunction(collectionArr, 66);
-     console.log(t)
+    testFunction = (arr, string) => {
+        return arr.filter(value => value.name === string);
+    };
+
+    const t = testFunction(collectionArr, name);
+     console.log(t);
 </script>
 <!--/*ШЕСТАЯ ЗАДАЧА*/-->
