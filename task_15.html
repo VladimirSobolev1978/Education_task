@@ -29,16 +29,8 @@
         }
     ];
 
-    function maxFunction(arr) {
-        let max = arr[0];
-
-        arr.map(value => {
-            if (value.age > max.age) {
-                max = value;
-            }
-            return arr;
-        });
-        return max;
+    function maxFunction() {
+        return collectionArray.reduce((acc, curr) => acc.age > curr.age ? acc : curr);
     }
 
     let t = maxFunction(collectionArray);
