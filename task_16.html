@@ -5,29 +5,13 @@
 let array1 = [3, 4, 5, 1, 0, 66, 54, 7, 566, 43, 8];
 let array2 = [33, 44, 55, 11, 10, 616, 514, 17, 56, 434, 86];
 
-// function returnFunction(arr1, arr2) {
-//     const result = [];
-//     arr1.forEach(item => result.push(item));
-//     arr2.forEach(item => result.push(item));
-//     return result;
-//   return array1.concat(array2);
-// }
-
-// function returnFunction(arr1, arr2) {
-//   return array1.concat(array2);
-// }
+function returnFunction(arr1, arr2) {
+  return arr1.concat(arr2);
+}
 
 // function returnFunction(...arrays) {
-//     const result = [];
-//     arrays.forEach(array1 => {
-//         array1.forEach(item => result.push(item))
-//     });
-//     return result;
+//     return [...arrays[0], ...arrays[1]];
 // }
-
-function returnFunction(...arrays) {
-    return [...arrays[0], ...arrays[1]];
-}
 
 const t = returnFunction(array1, array2);
 console.log(t);
