@@ -29,8 +29,8 @@
         }
     ];
 
-    function maxFunction() {
-        return collectionArray.reduce((acc, curr) => acc.age > curr.age ? acc : curr);
+    function maxFunction(arr) {
+        return arr.reduce((acc, curr) => acc.age > curr.age ? acc : curr);
     }
 
     let t = maxFunction(collectionArray);
