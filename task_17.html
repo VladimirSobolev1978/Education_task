@@ -8,13 +8,21 @@
         age: 40
     }
 
+    let name = 'name';
 
-    function existFunction() {
-
+    function existFunction(object, value) {
+        // return object[value];
+         if (object[value]) {
+             return "Exist";
+         } else {
+             return "No exist";
+         }
     }
 
 
-    const t = existFunction(array1, array2);
+    const t = existFunction(obj, name);
+    const t1 = existFunction({}, name);
     console.log(t);
+    console.log(t1);
 </script>
 <!--/* ЗАДАЧА 17 */-->
