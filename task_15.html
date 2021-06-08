@@ -1,0 +1,47 @@
+<!--Найти максимальный/минимальный элемент в массиве объектов-->
+<!--В функцию передаем коллекцию. По результату выполнения
+    вывести объект, определенное свойство которого, максимальное.-->
+
+<!--/* ЗАДАЧА 15 */-->
+
+<script>
+
+    let collectionArray = [
+        {
+            name: 'twist',
+            age: 20
+        },
+        {
+            name: 'test',
+            age: 90
+        },
+        {
+            name: 'twist',
+            age: 20
+        },
+        {
+            name: 'twister',
+            age: 34
+        },
+        {
+            name: 'rest',
+            age: 24
+        }
+    ];
+
+    function maxFunction(arr) {
+        let max = arr[0];
+
+        arr.map(value => {
+            if (value.age > max.age) {
+                max = value;
+            }
+        });
+        return max;
+    }
+
+    let t = maxFunction(collectionArray);
+    console.log(t);
+</script>
+
+<!--/* ЗАДАЧА 15 */-->
