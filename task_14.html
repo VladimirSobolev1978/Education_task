@@ -2,19 +2,14 @@
 
 <!--/* ЗАДАЧА 14 */-->
 <script>
-    let array = [1, 2, 3, 4, 5, -1]
+    let array = [1, 2, 3, 4, 5, -1, -3]
 
-    function minFunction(arr) {
-        let max = -1;
-        arr.map(value => {
-            if (value > max) {
-                max = value;
-            }
-        });
-        return max;
+    function maxFunction(arr) {
+        return Math.max(...array) + ' ' + Math.min(...array);
     }
 
-    let t = minFunction(array);
+    let t = maxFunction(array);
     console.log(t)
+
 </script>
 <!--/* ЗАДАЧА 14 */-->
