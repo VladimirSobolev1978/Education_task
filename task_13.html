@@ -14,26 +14,26 @@
             age: 30
         },
         {
-            name: 'twiste',
+            name: 'twister',
             age: 34
+        },
+        {
+            name: 'twister',
+            age: 5
         },
         {
             name: 'rest',
             age: 24
         }
     ];
-    let name = 'name';
+    let name = 'twister';
     
     function keyFunction(arr, string) {
-        let array = [];
-        arr.map(item => {
-            array.push(item[string]);
-        });
-        return array;
-    }
+        return arr.filter(value => value.name === string);
+    };
 
 
     let t = keyFunction(collectionArray, name);
-    console.log(t)
+    console.log(t);
 </script>
 <!--/* ЗАДАЧА 13 */-->
