@@ -1,0 +1,21 @@
+<!--Копирование массива/объекта.-->
+<!--В функцию передаем массив. Нужно скопировать значения с одного массива в другой.
+ В скопированном массиве изменить любой элемент и вывести 2 массива.-->
+
+<!--/* ЗАДАЧА 18 */-->
+<script>
+const arr = [1, 3, 45, 6, 78, 90, 0]
+
+function cloneFunc(array) {
+    const arrCopy = [...array];
+    const allObj = {};
+    arrCopy[3] = 1022;
+    allObj[0] = array;
+    allObj[1] = arrCopy;
+    return allObj;
+}
+
+const t = cloneFunc(arr);
+console.log(t);
+</script>
+<!--/* ЗАДАЧА 18 */-->
