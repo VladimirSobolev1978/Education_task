@@ -9,7 +9,7 @@
 const array = [3, -5, 6, null, 95, false, 54, 1, 0, -0, undefined, 88, '', 100];
 
 function filterFalse(arr) {
-   return arr.filter(current => current && current > 0);
+   return arr.filter(current => current);
 }
 
 const t = filterFalse(array);
