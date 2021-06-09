@@ -1,0 +1,18 @@
+<!--Напишите функцию filterFalse(arr), которая очищает массив от ложных (false) значений-->
+<!--false, null, undefined, 0, –0, NaN и "" (пустая строка)-->
+
+<!--Описание:-->
+<!--В функцию передаем массив. Нужно вернуть массив, в котором отсутствуют ложные значения-->
+
+<!--/* ЗАДАЧА 19 */-->
+<script>
+const array = [3, -5, 6, null, 95, false, 54, 1, 0, -0, undefined, 88, '', 100];
+
+function filterFalse(arr) {
+   return arr.filter(current => current && current > 0);
+}
+
+const t = filterFalse(array);
+console.log(t);
+</script>
+<!--/* ЗАДАЧА 19 */-->
