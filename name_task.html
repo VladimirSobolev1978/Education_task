@@ -1,0 +1,23 @@
+<script>
+    let array = [1, 2, 3, 4, 5];
+    let array1 = [2,3,4,5,6];
+
+    function myFor(arr, callback) {
+        for (let i = 0; i < arr.length; i++) {
+            callback(arr[i], i, arr);
+        }
+    }
+
+    myFor(array, (num) => {
+        console.log('111')
+        if (num % 2 === 0) return;
+        console.log(num)
+    });
+
+    array.forEach((num) => {
+        console.log('111')
+        if (num % 2 === 0) return;
+            console.log(num)
+        }
+    )
+</script>

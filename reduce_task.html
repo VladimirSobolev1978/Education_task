@@ -1,0 +1,9 @@
+<script>
+    function myReduce(arr, callback, initialValue) {
+       const result = initialValue;
+       for (let i = 0; i < arr.length; i ++) {
+           callback(result, arr[i], i, arr)
+       }
+       return result
+    }
+</script>
