@@ -11,11 +11,11 @@
     let name = 'name';
 
     function existFunction(object, value) {
-        // return object[value];
-         if (object[value]) {
-             return "Exist";
-         }
-        return "No exist";
+        return (object[value]) ? "Exist" : "No exist";
+        // if (object[value]) {
+        //      return "Exist";
+        //  }
+        // return "No exist";
     }
 
 
